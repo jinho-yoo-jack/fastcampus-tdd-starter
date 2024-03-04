@@ -1,0 +1,38 @@
+spring:
+  profiles:
+    active: chaos-monkey
+  datasource:
+    url: jdbc:mysql://localhost:13306/wanted
+    username: wanted
+    password: backend
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA 설정
+  jpa:
+    hibernate:
+      ddl-auto: none        # DB 초기화 전략 (none, create, create-drop, update, validate)
+    properties:
+      hibernate:
+        auto_quote_keyword: false
+        globally_quoted_identifiers: false
+        format_sql: true     # 쿼리 로그 포맷 (정렬)
+        show_sql: true       # 쿼리 로그 출력
+
+chaos:
+  monkey:
+    enabled: true
+    watcher:
+      service: true
+    assaults:
+      latencyActive: true
+
+management:
+  endpoint:
+    chaosmonkey:
+      enabled: true
+    chaosmonkeyjmx:
+      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: health, info, chaosmonkey
