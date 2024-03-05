@@ -13,6 +13,7 @@ import java.util.UUID;
 public class Ticket {
     // 공연 및 전시 정보 + 예약자 정보
     private UUID performanceId;
+    private String performanceName;
     private String reservationName;
     private String reservationPhoneNumber;
     private String reservationStatus; // 예약; 취소;
@@ -20,6 +21,7 @@ public class Ticket {
     private int point;
     private long amount;
     private int round;
+    private int gate;
     private char line;
     private int seat;
     private List<String> appliedPolicies;

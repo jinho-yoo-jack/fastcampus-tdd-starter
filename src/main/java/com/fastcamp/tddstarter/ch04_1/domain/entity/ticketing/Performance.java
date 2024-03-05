@@ -31,6 +31,7 @@ public class Performance {
     private Date start_date;
     @Column(nullable = false, name = "is_reserve", columnDefinition = "varchar default 'disable'")
     private String isReserve;
+    @Builder.Default
     @OneToMany
     @JoinColumn(name = "performance_id")
     private List<PerformanceDiscountPolicy> policies = new ArrayList<>();

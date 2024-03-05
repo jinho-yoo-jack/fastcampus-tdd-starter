@@ -2,9 +2,9 @@ spring:
   profiles:
     active: chaos-monkey
   datasource:
-    url: jdbc:mysql://localhost:13306/wanted
-    username: wanted
-    password: backend
+    url: jdbc:mysql://localhost:13306/testlabs
+    username: fastcamp
+    password: testcode
     driver-class-name: com.mysql.cj.jdbc.Driver
 
   # JPA 설정
