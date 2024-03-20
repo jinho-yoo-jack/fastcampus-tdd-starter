@@ -1,4 +1,4 @@
-package com.fastcamp.tddstarter.ch04_1.domain.entity;
+package com.fastcamp.tddstarter.ch04.domain.entity;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.EntityListeners;

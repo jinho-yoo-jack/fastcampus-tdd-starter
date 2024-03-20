@@ -1,7 +1,7 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.controller.TicketController;
-import com.fastcamp.tddstarter.ch04_1.service.TicketingService;
+import com.fastcamp.tddstarter.ch04.controller.TicketController;
+import com.fastcamp.tddstarter.ch04.service.TicketingService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

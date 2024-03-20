@@ -1,6 +1,4 @@
-package com.fastcamp.tddstarter.ch04_1.repository;
-
-import com.fastcamp.tddstarter.ch04_1.domain.dto.test_doubles.Student;
+package com.fastcamp.tddstarter.ch04.repository;
 
 import java.util.HashMap;
 import java.util.Map;

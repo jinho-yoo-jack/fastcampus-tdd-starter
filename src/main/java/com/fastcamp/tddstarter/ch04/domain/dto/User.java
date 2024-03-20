@@ -1,4 +1,4 @@
-package com.fastcamp.tddstarter.ch04_1.domain.dto;
+package com.fastcamp.tddstarter.ch04.domain.dto;
 
 public class User {
     private final String name;

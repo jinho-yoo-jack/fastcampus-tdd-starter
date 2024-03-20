@@ -1,8 +1,8 @@
-package com.fastcamp.tddstarter.ch04_1.service;
+package com.fastcamp.tddstarter.ch04.service;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.Ticket;
-import com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing.Reservation;
-import com.fastcamp.tddstarter.ch04_1.repository.ReservationRepository;
+import com.fastcamp.tddstarter.ch04.domain.dto.Ticket;
+import com.fastcamp.tddstarter.ch04.domain.entity.ticketing.Reservation;
+import com.fastcamp.tddstarter.ch04.repository.ReservationRepository;
 import jakarta.transaction.Transactional;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;

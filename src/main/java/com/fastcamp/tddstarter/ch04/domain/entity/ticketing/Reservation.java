@@ -1,7 +1,7 @@
-package com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing;
+package com.fastcamp.tddstarter.ch04.domain.entity.ticketing;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.Ticket;
-import com.fastcamp.tddstarter.ch04_1.domain.entity.BaseEntity;
+import com.fastcamp.tddstarter.ch04.domain.dto.Ticket;
+import com.fastcamp.tddstarter.ch04.domain.entity.BaseEntity;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Builder;

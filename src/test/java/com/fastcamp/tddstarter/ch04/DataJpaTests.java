@@ -1,7 +1,7 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing.Performance;
-import com.fastcamp.tddstarter.ch04_1.repository.PerformanceRepository;
+import com.fastcamp.tddstarter.ch04.domain.entity.ticketing.Performance;
+import com.fastcamp.tddstarter.ch04.repository.PerformanceRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;

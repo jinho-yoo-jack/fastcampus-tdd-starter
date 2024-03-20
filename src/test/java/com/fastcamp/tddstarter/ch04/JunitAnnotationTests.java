@@ -1,6 +1,6 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.User;
+import com.fastcamp.tddstarter.ch04.domain.dto.User;
 import org.junit.jupiter.api.*;
 import org.junit.jupiter.params.ParameterizedTest; import org.junit.jupiter.params.provider.CsvSource; import org.junit.jupiter.params.provider.NullAndEmptySource;
 import org.junit.jupiter.params.provider.ValueSource;

@@ -1,4 +1,4 @@
-package com.fastcamp.tddstarter.ch04_1.domain.dto.test_doubles;
+package com.fastcamp.tddstarter.ch04.domain.dto.test_doubles;
 
 import lombok.*;
 

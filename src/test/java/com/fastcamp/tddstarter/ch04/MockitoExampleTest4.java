@@ -1,9 +1,9 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.Ticket;
-import com.fastcamp.tddstarter.ch04_1.repository.ReservationRepository;
-import com.fastcamp.tddstarter.ch04_1.service.PerformanceService;
-import com.fastcamp.tddstarter.ch04_1.service.TicketingService;
+import com.fastcamp.tddstarter.ch04.domain.dto.Ticket;
+import com.fastcamp.tddstarter.ch04.repository.ReservationRepository;
+import com.fastcamp.tddstarter.ch04.service.PerformanceService;
+import com.fastcamp.tddstarter.ch04.service.TicketingService;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;

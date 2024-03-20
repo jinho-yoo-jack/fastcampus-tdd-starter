@@ -1,12 +1,11 @@
-package com.fastcamp.tddstarter.ch04_1.service;
+package com.fastcamp.tddstarter.ch04.service;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.PerformanceInfo;
-import com.fastcamp.tddstarter.ch04_1.repository.PerformanceRepository;
+import com.fastcamp.tddstarter.ch04.domain.dto.PerformanceInfo;
+import com.fastcamp.tddstarter.ch04.repository.PerformanceRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.UUID;
 

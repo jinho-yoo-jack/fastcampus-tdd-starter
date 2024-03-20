@@ -1,6 +1,6 @@
-package com.fastcamp.tddstarter.ch04_1.domain.dto;
+package com.fastcamp.tddstarter.ch04.domain.dto;
 
-import com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing.Performance;
+import com.fastcamp.tddstarter.ch04.domain.entity.ticketing.Performance;
 import lombok.Builder;
 import lombok.Data;
 

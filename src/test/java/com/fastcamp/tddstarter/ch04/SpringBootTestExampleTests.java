@@ -1,10 +1,9 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.Ticket;
-import com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing.Performance;
-import com.fastcamp.tddstarter.ch04_1.repository.PerformanceRepository;
-import com.fastcamp.tddstarter.ch04_1.service.TicketingService;
-import jakarta.transaction.Transactional;
+import com.fastcamp.tddstarter.ch04.domain.dto.Ticket;
+import com.fastcamp.tddstarter.ch04.domain.entity.ticketing.Performance;
+import com.fastcamp.tddstarter.ch04.repository.PerformanceRepository;
+import com.fastcamp.tddstarter.ch04.service.TicketingService;
 import org.junit.jupiter.api.DynamicTest;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestFactory;

@@ -1,6 +1,6 @@
-package com.fastcamp.tddstarter.ch04_1.repository;
+package com.fastcamp.tddstarter.ch04.repository;
 
-import com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing.Performance;
+import com.fastcamp.tddstarter.ch04.domain.entity.ticketing.Performance;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

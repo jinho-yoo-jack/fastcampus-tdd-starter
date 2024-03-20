@@ -1,7 +1,7 @@
-package com.fastcamp.tddstarter.ch04_1.controller;
+package com.fastcamp.tddstarter.ch04.controller;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.Ticket;
-import com.fastcamp.tddstarter.ch04_1.service.TicketingService;
+import com.fastcamp.tddstarter.ch04.domain.dto.Ticket;
+import com.fastcamp.tddstarter.ch04.service.TicketingService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -1,22 +1,17 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.Ticket;
-import com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing.Performance;
-import com.fastcamp.tddstarter.ch04_1.repository.PerformanceRepository;
-import com.fastcamp.tddstarter.ch04_1.service.TicketingService;
+import com.fastcamp.tddstarter.ch04.domain.dto.Ticket;
+import com.fastcamp.tddstarter.ch04.domain.entity.ticketing.Performance;
+import com.fastcamp.tddstarter.ch04.repository.PerformanceRepository;
+import com.fastcamp.tddstarter.ch04.service.TicketingService;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;
-import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.ActiveProfiles;
 
-import java.sql.Date;
-import java.time.LocalDate;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 @SpringBootTest

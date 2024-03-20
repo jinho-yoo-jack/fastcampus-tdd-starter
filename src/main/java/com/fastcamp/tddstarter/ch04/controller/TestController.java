@@ -1,4 +1,4 @@
-package com.fastcamp.tddstarter.ch04_1.controller;
+package com.fastcamp.tddstarter.ch04.controller;
 
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.*;

@@ -1,6 +1,6 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.User;
+import com.fastcamp.tddstarter.ch04.domain.dto.User;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Timeout;

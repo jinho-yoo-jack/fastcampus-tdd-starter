@@ -1,4 +1,4 @@
-package com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing;
+package com.fastcamp.tddstarter.ch04.domain.entity.ticketing;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;

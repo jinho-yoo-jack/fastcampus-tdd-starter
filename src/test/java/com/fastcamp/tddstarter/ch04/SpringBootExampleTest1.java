@@ -1,9 +1,9 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.Ticket;
-import com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing.Performance;
-import com.fastcamp.tddstarter.ch04_1.repository.PerformanceRepository;
-import com.fastcamp.tddstarter.ch04_1.service.TicketingService;
+import com.fastcamp.tddstarter.ch04.domain.dto.Ticket;
+import com.fastcamp.tddstarter.ch04.domain.entity.ticketing.Performance;
+import com.fastcamp.tddstarter.ch04.repository.PerformanceRepository;
+import com.fastcamp.tddstarter.ch04.service.TicketingService;
 import jakarta.transaction.Transactional;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
@@ -18,7 +18,6 @@ import java.sql.Date;
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.UUID;
 
 import static org.mockito.ArgumentMatchers.any;
 

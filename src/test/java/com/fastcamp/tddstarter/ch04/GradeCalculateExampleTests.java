@@ -1,7 +1,7 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.domain.dto.test_doubles.Student;
-import com.fastcamp.tddstarter.ch04_1.repository.StubGradeRepository;
+import com.fastcamp.tddstarter.ch04.domain.dto.test_doubles.Student;
+import com.fastcamp.tddstarter.ch04.repository.StubGradeRepository;
 import org.junit.jupiter.api.Test;
 
 import java.util.HashMap;
