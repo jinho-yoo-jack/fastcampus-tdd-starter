@@ -1,35 +1,56 @@
 package com.fastcamp.tddstarter.ch04;
 
-import com.fastcamp.tddstarter.ch04_1.controller.TicketController;
+import com.fastcamp.tddstarter.ch04_1.domain.dto.Ticket;
+import com.fastcamp.tddstarter.ch04_1.domain.entity.ticketing.Performance;
+import com.fastcamp.tddstarter.ch04_1.repository.PerformanceRepository;
 import com.fastcamp.tddstarter.ch04_1.service.TicketingService;
+import jakarta.transaction.Transactional;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
-import org.springframework.test.web.servlet.MockMvc;
+import org.springframework.boot.jdbc.EmbeddedDatabaseConnection;
+import org.springframework.boot.test.autoconfigure.jdbc.AutoConfigureTestDatabase;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.ActiveProfiles;
 
-import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
-import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import java.sql.Date;
+import java.time.LocalDate;
+import java.util.ArrayList;
+import java.util.Arrays;
 
-
-@WebMvcTest(TicketController.class)
+@SpringBootTest
+@Transactional
+@ActiveProfiles("chaos-monkey")
 public class SpringBootExampleTest2 {
     @Autowired
-    MockMvc mockMvc;
+    private TicketingService ticketingService;
 
-    @MockBean
-    TicketingService ticketingService;
+    @Autowired
+    private PerformanceRepository performanceRepository;
 
-    @DisplayName("WebMvcTest를 이용한 Controller Test")
+    @DisplayName("SpringBootTest를 이용한 통합 테스트")
     @Test
-    public void ticketingControllerTest() throws Exception {
-        // given
-        String contents = "Test";
+    public void springBootExample1Test() {
+        // 첫 번째 데이터 insert
+        // Given
+        Performance performanceInfo = performanceRepository.findByName("레베카");
+        Ticket t = Ticket.builder()
+            .performanceId(performanceInfo.getId())
+            .performanceName("레베카")
+            .reservationName("유진호")
+            .reservationPhoneNumber("010-1234-1234")
+            .reservationStatus("reserve")
+            .round(1)
+            .line('A')
+            .seat(1)
+            .appliedPolicies(Arrays.asList(new String[]{"telecome"}))
+            .build();
 
-        mockMvc.perform(get("/ticket"))
-                .andExpect(status().isOk())
-                .andExpect(content().string(contents));
+        // When
+        Ticket reservedTicket = ticketingService.ticketing(t);
+
+        // Then
+        Assertions.assertEquals(t, reservedTicket);
     }
 }

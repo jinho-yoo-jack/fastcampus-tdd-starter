@@ -1,10 +1,13 @@
 package com.fastcamp.tddstarter.ch02;
 
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.api.function.Executable;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+@ExtendWith(SpringExtension.class)
 public class AssertExample {
 
     public AssertExample(){
@@ -22,6 +25,7 @@ public class AssertExample {
     }
 
     @Test
+    @Timeout(10)
     void basicTest(){
         System.out.println("Execute test");
         assertEquals(1,1);

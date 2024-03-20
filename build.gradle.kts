@@ -33,11 +33,17 @@ dependencies {
     runtimeOnly("org.postgresql:postgresql")
     annotationProcessor("org.projectlombok:lombok")
     testImplementation("org.springframework.boot:spring-boot-starter-test")
+    // ArchUnit
+    implementation("com.tngtech.archunit:archunit:1.2.1")
+    testImplementation("com.tngtech.archunit:archunit-junit5:1.2.1")
     // Mockito
     testImplementation("org.mockito:mockito-core:3.3.0")
     // Chaos-Monkey
     implementation("de.codecentric:chaos-monkey-spring-boot:3.1.0")
     implementation("org.springframework.boot:spring-boot-starter-actuator")
+
+    testImplementation("com.h2database:h2:2.2.224")
+
 }
 
 tasks.withType<Test> {

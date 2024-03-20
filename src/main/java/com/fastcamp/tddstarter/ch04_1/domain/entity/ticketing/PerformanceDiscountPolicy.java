@@ -11,7 +11,7 @@ import java.sql.Date;
 import java.util.UUID;
 
 @Entity
-@Table
+@Table(name = "performance_discount_policy_info")
 @Getter
 @Builder
 @NoArgsConstructor

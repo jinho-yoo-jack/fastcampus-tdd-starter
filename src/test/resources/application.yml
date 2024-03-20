@@ -1,6 +1,6 @@
 spring:
   profiles:
-    active: chaos-monkey
+    active: test
   datasource:
     url: jdbc:mysql://localhost:13306/testlabs
     username: fastcamp

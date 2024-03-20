@@ -26,7 +26,7 @@ public class TicketController {
     @PostMapping("/reserve")
     public ResponseEntity<Ticket> reservation() throws Exception {
         Ticket ticket = Ticket.builder()
-                .performanceId(UUID.fromString("adc45fd5-dab9-11ee-9743-0242ac130002"))
+                .performanceId(UUID.fromString("55a30393-e45d-11ee-9655-0242ac140002"))
                 .performanceName("레베카")
                 .reservationName("유진호")
                 .reservationPhoneNumber("010-1234-1234")

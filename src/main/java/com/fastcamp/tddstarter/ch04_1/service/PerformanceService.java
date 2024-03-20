@@ -27,6 +27,7 @@ public class PerformanceService {
     }
 
     public String isEnableReserve(UUID performanceId){
+        System.out.println("Execute Production Code");
         return performanceRepository.findById(performanceId)
                 .orElseThrow()
                 .getIsReserve();

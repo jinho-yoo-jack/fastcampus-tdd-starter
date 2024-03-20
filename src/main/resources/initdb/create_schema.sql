@@ -1,4 +1,10 @@
--- schema.sql
+-- create-user
+CREATE DATABASE IF NOT EXISTS `testlabs`;
+CREATE USER IF NOT EXISTS `fastcamp`@`localhost` identified by 'testcode';
+CREATE USER IF NOT EXISTS `fastcamp`@`%` identified by 'testcode';
+GRANT all privileges on `testlabs`.* TO `fastcamp`@`localhost`;
+GRANT all privileges on `testlabs`.* TO `fastcamp`@`%`;
+
 CREATE TABLE IF NOT EXISTS `performance`
 (
     `id`         BINARY(16) default (uuid_to_bin(uuid())) NOT NULL COMMENT '공연/전시 ID',

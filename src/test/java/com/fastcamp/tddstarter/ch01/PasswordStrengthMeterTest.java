@@ -1,35 +1,26 @@
 package com.fastcamp.tddstarter.ch01;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
 
-import org.junit.jupiter.api.*;
-import org.junit.jupiter.api.function.Executable;
-import org.mockito.internal.matchers.Null;
-
-import java.time.LocalDate;
-import java.time.LocalDateTime;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class PasswordStrengthMeterTest {
     @Test
-    void meetsAllCriteria_Then_Strong() {
+    void name(){
+
+    }
+
+    @Test
+    void meetsAllCriteriaThenStrong(){
         PasswordStrengthMeter meter = new PasswordStrengthMeter();
-        PasswordStrength result = meter.meter("ab12!@AB");
+        PasswordStrength result = meter.meter("ab12!@ABC"); // Expected: STRONG
         assertEquals(PasswordStrength.STRONG, result);
     }
 
     @Test
-    void meetsOtherCriteria_expect_for_Length_Then_Normal() {
+    void meetsOtherCriteriaExpectForLengthThenNormal(){
         PasswordStrengthMeter meter = new PasswordStrengthMeter();
-        PasswordStrength result = meter.meter("ab12!@A");
+        PasswordStrength result = meter.meter("ab12!AB"); // Expected: NORMAL
         assertEquals(PasswordStrength.NORMAL, result);
     }
-
-    @Test
-    void assertEquals_test(){
-        LocalDate dateTime1 = LocalDate.now(); // yyyy-mm-dd
-        LocalDate dateTime2 = LocalDate.now(); // yyyy-mm-dd
-        System.out.println(dateTime2);
-        assertEquals(dateTime1, dateTime2);
-    }
-
 }
